@@ -1,0 +1,14 @@
+{
+  "name": "cm_static_pages",
+  "version": "0.0.1",
+  "description": "classmentors static pages",
+  "main": "pkg.js",
+  "author": "vanzaj",
+  "license": "MIT",
+  "dependencies": {
+    "autoprefixer-stylus": "^0.8.0",
+    "cssmin": "^0.4.3",
+    "jade": "^1.11.0",
+    "stylus": "^0.52.4"
+  }
+}

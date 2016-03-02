@@ -1,0 +1,136 @@
+$border-radius = 3px
+$font-base = 16px
+
+@import 'yeti-sans'
+
+.colorbg
+  background-color: #eee
+
+.cm-head
+  height: 300px
+  background: url('img/head_bg.png') no-repeat center center
+  background-size: cover
+
+  h1
+    top-margin: 150px
+    color: $orange
+    font-size: 400%
+    font-weight: bold
+    text-shadow: 0px 0px 2px black;
+
+body
+  font-family: $font-lato
+
+a
+  color: $blue
+
+  &:hover
+    color: $blue-saturated-darker
+
+a.btn
+  margin: $ui-padding-narrow
+
+article h1
+  font-size: $font-h2
+
+article h2
+  font-size: $font-h3
+
+//- Code Highlighting
+
+pre
+  color: black
+  background: lighten($gray-lighter, 60%)
+  border: 1px solid $gray
+  font-size: 0.9rem
+
+code
+  color: black
+  background: lighten($gray-lighter, 60%)
+
+//- Header
+
+header
+  padding-bottom: $ui-padding-spaced
+
+  h1
+    margin-bottom: 0
+
+  p
+    font-size: $font-large
+
+  .btn
+    margin: $space 0
+
+  a
+    font-family: $font-sans
+
+//- Footer
+footer[role='contentinfo']
+  padding-top: $ui-padding-extra-spaced
+  padding-bottom: $ui-padding-spaced
+  background-color: #333
+  color: white
+
+  a
+    color: $gray-lighter
+
+  li:not(:last-of-type)
+    &:after
+      content: ' '
+      margin: 0 5px 0 10px
+
+  img
+    vertical-align: middle
+
+section
+  padding: $ui-padding-extra-spaced 0
+
+p.space-btm
+  margin-bottom: $ui-padding-default
+
+//- Navigation
+.top-nav
+  margin-bottom: 0
+
+.top-nav ul
+  z-index: 10
+
+.centered
+  text-align: center
+
+.scaled
+  width: 98%
+  height: !auto
+
+.btn-cm
+  background-color: $orange
+
+  &:hover
+    background-color: darken($orange, 20%)
+
+  &:disabled,
+  &.btn-disabled
+    background-color: $orange-light
+
+//- Grid
+[class^="gf-cell"]
+  text-align: left
+  p
+    margin: 0
+
+@media screen and (min-width: $breakpoint-tablet+1)
+
+  body
+    border-width: 0px
+
+@media screen and (max-width: $breakpoint-tablet)
+
+  body
+    border-width: 0px
+
+@media screen and (max-width: $breakpoint-smartphone)
+
+  .btn
+    display: inline-block
+    width: auto
